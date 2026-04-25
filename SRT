@@ -1,0 +1,275 @@
+*
+
+.subckt SRT
+
+
+.include "12ax7.lib"
+.model __D7 D
+.model __D6 D
+.model __D8 D
+.model __D9 D
+.model __D17 D
+.model __D19 D
+.model __D18 D
+.model __D20 D
+.model __D1 D
+.model __D2 D
+.model __D4 D
+.model __D5 D
+.model __D3 D
+D7 Net-_D6-K_ Net-_D7-K_ __D7
+D6 GND Net-_D6-K_ __D6
+U12 __U12
+U13 __U13
+C78 Net-_D7-K_ GND 2200u
+U6 __U6
+D8 GND Net-_D8-K_ __D8
+D9 Net-_D8-K_ Net-_D7-K_ __D9
+D17 Net-_D17-A_ +12V __D17
+C76 +12V GND 10u
+D11 __D11
+K2 __K2
+K1 __K1
+D19 Net-_D19-A_ +12V __D19
+R93 GND Net-_R93-Pad2_ 2.2k
+D12 __D12
+K3 __K3
+D18 Net-_D17-A_ +12V __D18
+U10 __U10
+C77 +12V GND 100u
+U9 __U9
+R90 1/2 +12V 470k
+U8 __U8
+U7 __U7
+R91 GND 1/2 68k
+C73 1/2 GND 100u
+J9 __J9
+SW6 __SW6
+SW7 __SW7
+D20 Net-_D19-A_ +12V __D20
+K4 __K4
+R20 Net-_Q2-D_ +12V 10k
+C31 Net-_Q2-D_ Net-_SW5A-C_ 220n
+R41 GND Net-_Q2-S_ 2.4k
+C20 +12V GND 470u
+Q2 __Q2
+C43 Net-_C42-Pad2_ Net-_U8A-+_ 1n
+RV15 __RV15
+R79 Net-_U8A-+_ Net-_C64-Pad1_ 24k
+R86 Net-_U8A--_ Net-_C64-Pad2_ 100
+R87 Net-_C63-Pad2_ 1/2 1.8k
+RV4 __RV4
+RV2 __RV2
+R6 GND Net-_U1B-K_ 1.5k
+C7 Net-_U1B-K_ GND 22u
+SW1 __SW1
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 220p
+R2 Net-_U1B-A_ B+1 100k
+C3 Net-_U1B-A_ Net-_C3-Pad2_ 47n
+U1 U1.unknown
+C15 Net-_U1A-A_ Net-_C12-Pad2_ 47n
+R17 Net-_J2-PadT_ Net-_U1A-G_ 68k
+J2 __J2
+R10 Net-_U1A-A_ B+1 220k
+R45 Net-_C12-Pad2_ Net-_C25-Pad2_ 680k
+C25 Net-_C12-Pad2_ Net-_C25-Pad2_ 2200p
+R12 Net-_C12-Pad1_ Net-_C12-Pad2_ 470k
+RV16 __RV16
+C16 Net-_C12-Pad1_ Net-_C16-Pad2_ 1000p
+R35 GND Net-_U1A-K_ 1.8k
+C32 Net-_C25-Pad2_ Net-_C32-Pad2_ 1000p
+R46 Net-_C32-Pad2_ Net-_U3A-G_ 470k
+RV11 __RV11
+R51 GND Net-_U3A-K_ 1.8k
+C35 Net-_U3A-K_ GND 1u
+U3 __U3
+R50 GND Net-_K4-Pad8_ 2.2Meg
+R27 Net-_U3A-A_ B+2 100k
+R32 Net-_C26-Pad2_ Net-_K4-Pad8_ 470k
+C26 Net-_U3A-A_ Net-_C26-Pad2_ 22n
+R1 Net-_C12-Pad2_ Net-_C1-Pad1_ 68k
+C4 Net-_C4-Pad1_ Net-_C4-Pad2_ 100n
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 220p
+R3 Net-_C4-Pad2_ Net-_C1-Pad1_ 100k
+RV6 __RV6
+C6 Net-_C4-Pad2_ Net-_C6-Pad2_ 47n
+RV3 __RV3
+C12 Net-_C12-Pad1_ Net-_C12-Pad2_ 470p
+RV1 __RV1
+C29 Net-_U1A-K_ Net-_C29-Pad2_ 22u
+C30 Net-_U1A-K_ GND 470n
+R47 GND Net-_C29-Pad2_ 100k
+R23 GND Net-_J2-PadT_ 1Meg
+SW2 __SW2
+C11 Net-_C11-Pad1_ Net-_C11-Pad2_ 4.7n
+RV7 __RV7
+C9 Net-_C9-Pad1_ Net-_C11-Pad1_ 100n
+R96 GND Net-_U12A-F1_ 1
+U4 __U4
+R94 Net-_C17-Pad1_ Net-_U12A-G1_ 2.2k
+R13 Net-_C17-Pad1_ Net-_U4A-G1_ 2.2k
+C17 Net-_C17-Pad1_ Net-_U5A-A_ 47n
+R7 Net-_C34-Pad1_ Net-_C9-Pad1_ 39k
+J5 __J5
+J6 __J6
+R84 Net-_C68-Pad1_ B+4 470k
+C68 Net-_C68-Pad1_ GND 100u
+R88 GND Net-_C68-Pad1_ 68k
+U2 __U2
+C60 B+4 GND 47u
+T3 __T3
+D1 Net-_D1-A_ Net-_D1-K_ __D1
+C39 GND Net-_D1-A_ 10u
+T2 __T2
+F1 __F1
+C59 B+5 GND 200u
+R80 B+5 GND 82k
+RV19 __RV19
+D2 GND Net-_D2-K_ __D2
+D4 GND Net-_D4-K_ __D4
+D5 Net-_D4-K_ Net-_D3-K_ __D5
+D3 Net-_D2-K_ Net-_D3-K_ __D3
+SW3 __SW3
+C40 GND BIAS 10u
+SW8 __SW8
+R55 Net-_R55-Pad1_ BIAS 56k
+R54 BIAS Net-_D1-A_ 15k
+R42 Net-_R42-Pad1_ Net-_D1-A_ 15k
+P1 __P1
+SW4 __SW4
+F2 __F2
+NE1 __NE1
+R62 B+3 B+2 15k
+R57 B+3 B+1 15k
+C61 B+3 GND 47u
+C62 B+2 GND 47u
+R61 B+4 B+3 10k
+C41 B+1 GND 47u
+U5 __U5
+RV17 __RV17
+RV12 __RV12
+D10 __D10
+C33 Net-_C27-Pad1_ Net-_C33-Pad2_ 22n
+RV14 __RV14
+RV13 __RV13
+R25 Net-_C27-Pad1_ Net-_U2A-K_ 47k
+C27 Net-_C27-Pad1_ Net-_C27-Pad2_ 22n
+C21 Net-_U2A-K_ Net-_C21-Pad2_ 680p
+R14 GND Net-_U2A-K_ 100k
+R36 GND Net-_U3B-G_ 2.2Meg
+R24 GND Net-_U3B-K_ 39k
+RV10 __RV10
+RV8 __RV8
+RV9 __RV9
+C14 Net-_C14-Pad1_ Net-_C14-Pad2_ 22n
+R4 Net-_C14-Pad1_ Net-_U2A-K_ 33k
+C8 Net-_C14-Pad1_ Net-_C8-Pad2_ 22n
+R8 Net-_U3B-A_ B+2 100k
+RV5 __RV5
+C5 Net-_U2A-K_ Net-_C5-Pad2_ 470p
+R11 GND Net-_C13-Pad2_ 330k
+R15 GND Net-_U2B-K_ 1.8k
+R9 Net-_U2B-G_ Net-_C13-Pad2_ 220k
+C18 Net-_U2B-K_ GND 1u
+C13 Net-_U3B-A_ Net-_C13-Pad2_ 22n
+C10 B+2 Net-_U3B-A_ 1000p
+R5 Net-_U2A-G_ B+3 220k
+C49 Net-_U9B--_ Net-_C49-Pad2_ 2.2u
+R66 Net-_U9B-+_ Net-_C52-Pad1_ 20k
+C66 Net-_U9B-+_ GND 330p
+C52 Net-_C52-Pad1_ Net-_U9B--_ 2.2n
+R73 Net-_C49-Pad2_ GND 100k
+R68 Net-_SW5A-A_ Net-_C49-Pad2_ 1k
+J7 __J7
+RV18 __RV18
+R33 Net-_C34-Pad1_ Net-_R30-Pad1_ 10k
+C19 Net-_C19-Pad1_ Net-_U5A-G_ 22n
+R30 Net-_R30-Pad1_ Net-_U5A-G_ 1Meg
+R53 GND Net-_C34-Pad1_ 4.7k
+C37 Net-_C34-Pad1_ Net-_C37-Pad2_ 100n
+R43 Net-_U5B-G_ Net-_R30-Pad1_ 1Meg
+C34 Net-_C34-Pad1_ Net-_U5B-G_ 100n
+R34 Net-_R30-Pad1_ Net-_U5A-K_ 470
+C36 Net-_U5B-A_ Net-_C36-Pad2_ 47n
+C28 Net-_U5B-A_ Net-_U5A-A_ 47p
+R21 B+3 Net-_U5A-A_ 82k
+R48 Net-_U5B-A_ B+3 100k
+R22 BIAS Net-_C17-Pad1_ 220k
+T1 __T1
+R31 GND Net-_U4A-F1_ 1
+R44 B+4 Net-_U6A-G2_ 470
+R26 Net-_U4A-G2_ B+4 470
+R98 Net-_U12A-G2_ B+4 470
+R99 B+4 Net-_U13A-G2_ 470
+R52 Net-_C36-Pad2_ Net-_U6A-G1_ 2.2k
+R95 Net-_C36-Pad2_ Net-_U13A-G1_ 2.2k
+R97 Net-_U13A-F1_ GND 1
+R39 Net-_U6A-F1_ GND 1
+R49 Net-_C36-Pad2_ BIAS 220k
+R65 Net-_C52-Pad1_ Net-_U9A--_ 20k
+R64 Net-_U8B-+_ Net-_C51-Pad1_ 22k
+R60 1/2 Net-_C46-Pad2_ 200k
+R63 Net-_C51-Pad1_ Net-_C46-Pad2_ 22k
+C51 Net-_C51-Pad1_ Net-_U8B--_ 2.2n
+C48 Net-_C47-Pad2_ Net-_U9A-+_ 1n
+R72 Net-_C47-Pad2_ Net-_C63-Pad2_ 6.2k
+C47 Net-_U8B--_ Net-_C47-Pad2_ 1n
+R85 Net-_U9A--_ Net-_C63-Pad2_ 150
+R75 Net-_U9A-+_ Net-_C63-Pad1_ 15k
+C65 Net-_U8B-+_ GND 330p
+R74 Net-_C63-Pad1_ Net-_U8B--_ 11k
+C63 Net-_C63-Pad1_ Net-_C63-Pad2_ 2.2n
+C46 Net-_C45-Pad2_ Net-_C46-Pad2_ 22n
+C45 Net-_U8A--_ Net-_C45-Pad2_ 22n
+R71 Net-_C45-Pad2_ Net-_U8B--_ 82k
+J1 __J1
+R28 GND Net-_C22-Pad1_ 39k
+R29 GND Net-_Q1-G_ 1Meg
+R18 Net-_C22-Pad1_ Net-_J1-PadT_ 430k
+R19 Net-_Q1-G_ +12V 1Meg
+C22 Net-_C22-Pad1_ Net-_Q1-G_ 100n
+J3 __J3
+R37 GND Net-_Q1-S_ 10k
+R38 GND Net-_C23-Pad2_ 100k
+Q1 __Q1
+C23 Net-_Q1-S_ Net-_C23-Pad2_ 1u
+C24 Net-_C24-Pad1_ Net-_Q2-G_ 100n
+J4 __J4
+R40 GND Net-_Q2-G_ 1Meg
+R16 Net-_J1-PadT_ Net-_K2-Pad13_ 220k
+R56 Net-_C38-Pad1_ Net-_U7A--_ 240k
+C53 Net-_U7A--_ Net-_C53-Pad2_ 4.7n
+R69 Net-_C54-Pad2_ Net-_U7A--_ 20k
+C38 Net-_C38-Pad1_ Net-_SW5A-C_ 10n
+C54 Net-_C53-Pad2_ Net-_C54-Pad2_ 4.7n
+R81 Net-_C53-Pad2_ GND 6.8k
+C56 Net-_C55-Pad2_ Net-_C56-Pad2_ 4.7n
+C55 Net-_C54-Pad2_ Net-_C55-Pad2_ 4.7n
+R70 Net-_C56-Pad2_ Net-_C54-Pad2_ 36k
+R82 Net-_C55-Pad2_ GND 820
+RV20 __RV20
+U11 __U11
+C74 Net-_C74-Pad1_ Net-_SW5B-A_ 220u
+C75 Net-_C75-Pad1_ Net-_C74-Pad1_ 47n
+R92 Net-_C75-Pad1_ GND 10
+C71 Net-_U11-BYPASS_ GND 100n
+C72 Net-_SW5A-B_ Net-_C72-Pad2_ 220n
+SW5 __SW5
+J8 __J8
+C44 Net-_C44-Pad1_ GND 2.2n
+R59 Net-_U7B-+_ Net-_C44-Pad1_ 20k
+R58 Net-_C44-Pad1_ Net-_C56-Pad2_ 18.7k
+R76 Net-_C67-Pad1_ Net-_U7B--_ 36k
+C57 Net-_C56-Pad2_ Net-_C57-Pad2_ 1n
+C58 Net-_C57-Pad2_ Net-_U7B-+_ 1n
+R77 Net-_C42-Pad1_ Net-_C67-Pad1_ 36k
+R89 Net-_C64-Pad2_ 1/2 4.12k
+C64 Net-_C64-Pad1_ Net-_C64-Pad2_ 2.2n
+R78 Net-_C64-Pad1_ Net-_C42-Pad1_ 24k
+C67 Net-_C67-Pad1_ GND 100n
+C50 Net-_U7B--_ Net-_C42-Pad1_ 10n
+C42 Net-_C42-Pad1_ Net-_C42-Pad2_ 1n
+R67 Net-_C42-Pad2_ Net-_C64-Pad2_ 12.7k
+R83 Net-_C57-Pad2_ GND 10k
+
+.ends
